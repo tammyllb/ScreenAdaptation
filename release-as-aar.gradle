@@ -1,0 +1,7 @@
+uploadArchives() {
+    repositories.mavenDeployer {
+        repository(url: releaseRepositoryUrl) { // 正式包
+            authentication(userName: 'wallet', password: 'wallet')
+        }
+    }
+}

@@ -1,0 +1,20 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+
+android {
+    compileSdkVersion 26
+
+    defaultConfig {
+        minSdkVersion 8
+    }
+
+}
+
+dependencies {
+}
+
+group repositoryGroup
+version '1.0'
+
+//打成aar格式
+apply from: '../release-as-aar.gradle' //引用上传插件
